@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: meta/repository
+    repository_url: 'deb http://ppa.launchpad.net/nviennot/tmate/ubuntu trusty main'
+    repository_key: '0x2275d8ccc3ebc003'
