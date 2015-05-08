@@ -1,5 +1,20 @@
 ---
 dependencies:
-  - role: meta/repository
-    repository_url: 'deb http://ppa.launchpad.net/nviennot/tmate/ubuntu trusty main'
-    repository_key: '0x2275d8ccc3ebc003'
+  - role: colstrom.apt-repository
+    repository_key: "0x2275d8ccc3ebc003"
+    repository_url: "deb http://ppa.launchpad.net/nviennot/tmate/ubuntu {{ ansible_distribution_release }} main"
+galaxy_info:
+  author: "Chris Olstrom"
+  company: "TELUS digital"
+  description: "Tmate is a fork of tmux. It provides an instant pairing solution."
+  license: MIT
+  platforms:
+    - name: Ubuntu
+      versions:
+      - lucid
+      - precise
+      - trusty
+      - utopic
+      - vivid
+  categories:
+    - system
